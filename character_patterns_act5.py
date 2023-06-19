@@ -4,7 +4,7 @@
 		the number of lines L
 		the number of columns C
 		the width and height of the grid, equal here, S (size)
-    (4 input values total)
+    (4 input variables total)
 	Prints diagonals alternatingly, according to the example"""
  
 t = int(input())
