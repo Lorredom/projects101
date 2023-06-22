@@ -91,7 +91,7 @@ def main():
     winner = 0
     player = 1
     while True:
-        if not game_should_continue(board, BOARD_SIZE):
+        if not game_can_continue(board, BOARD_SIZE):
             sys.exit("No more fields are available. Game ended\n")
 
         play(board, player)
@@ -104,7 +104,7 @@ def main():
         print_board(board, BOARD_SIZE)
 
     if winner != 0:
-        print(f"Winner is {player}")
+        print(f"Winner is player {player}")
     # print(board[0], board[1], board[2], sep="\n")
     print_board(board, BOARD_SIZE)
 
